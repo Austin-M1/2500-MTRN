@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef TRIANGULAR_PRISM_H
+#define TRIANGULAR_PRISM_H
+
 #include "Shape.hpp"
 
 class TriangularPrism : public Shape {
@@ -27,3 +30,5 @@ public:
 
 	~TriangularPrism();
 };
+
+#endif

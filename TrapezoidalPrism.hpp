@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef TRAPEZOIDAL_PRISM_H
+#define TRAPEZOIDAL_PRISM_H
+
 #include "Shape.hpp"
 
 class TrapezoidalPrism : public Shape {
@@ -29,3 +33,5 @@ public:
 
 	~TrapezoidalPrism();
 };
+
+#endif

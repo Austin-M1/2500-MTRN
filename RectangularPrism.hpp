@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef RECTANGULAR_PRISM_H
+#define RECTANGULAR_PRISM_H
+
 #include "Shape.hpp"
 
 class RectangularPrism : public Shape {
@@ -27,3 +30,5 @@ public:
 	~RectangularPrism();
 
 };
+
+#endif

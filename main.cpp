@@ -221,19 +221,29 @@ void display() {
 	//drawTest();
 	
 	//**********DRAW STUFF**********
-	//RectangularPrism R(15, 10, 10, 0, 0, 0, 4, 5, 7);
-	//R.draw();
+	/*
+	RectangularPrism R(10, 7, 5, 20, 0, 20, 1, 0, 0);
+	R.draw();
 
-	//TriangularPrism T(5,5,5,2,5,5,5,1,2,3);
-	//T.draw();
+	glPushMatrix();
+	TriangularPrism T(5,5,5,2,-20,0,20,0,1,0);
+	T.draw();
+	glRotated(45, 0, 1, 0);
+	glPopMatrix();
 
-	//TrapezoidalPrism TR(20,30,5,1,7,9,9,9,1,1,1);
-	//TR.draw();
+	glPushMatrix();
+	TrapezoidalPrism TR(10,15,5,1,-20,0,-20,9,0,0,1);
+	TR.draw();
+	glPopMatrix();
 
-	//Cylinder C(2,7,7,8,6,2,1,1);
-	//C.draw();
-
+	glPushMatrix();
+	Cylinder C(2,7,20,0,-20,1,1,1);
+	C.draw();
+	glRotated(90,0,1,0);
+	glPopMatrix();
+	*/
 	//**********DRAW STUFF END**********
+
 	glutSwapBuffers();
 };
 

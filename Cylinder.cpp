@@ -63,12 +63,17 @@ void Cylinder::draw() {
 	setColorInGL();
 	positionInGL();
 
-	glRotatef(rotation, 0, 1, 0);
-	glRotatef(rotation, 0, 0, 1);
-	//setColorInGL();
-	//positionInGL();
-	static GLUquadric * quad = gluNewQuadric();
-	glTranslatef(0, radius, -depth / 2);
+	GLUquadric* Quad = gluNewQuadric();
+	glTranslatef(0, 0, -(depth / 2.0));
+
+	gluCylinder(Quad, radius, radius, depth, 20, 50);
+	glRotatef(180, 1, 0, 0);
+	gluDisk(Quad, 0.0f, radius, 20, 1);
+	glRotatef(180, 1, 0, 0);
+	glTranslatef(0.0f, 0.0f, depth);
+	gluDisk(Quad, 0.0f, radius, 20, 1);
+	glTranslatef(0.0f, 0.0f, depth);
+	glFlush();
 
 	glEnd();
 	glPopMatrix();
