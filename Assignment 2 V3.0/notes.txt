@@ -1,0 +1,27 @@
+class cylinder : public Shape {
+... 
+} 
+
+cylinder::cylinder(double x_, y_, z_, tor< 
+: Shape (C_ 
+
+main { 
+
+
+
+should work for first three shapes (not cylinder) --> look online for what 
+each means and what each shape requires. 
+
+cyl->function 
+gluCylinder() 
+gluDisk()
+glTranslated()
+positionInGL()
+gl PushMatrix()
+glBegin() -> GL_Quads?GL_TRIANGLES 
+glVertex3f() -> Define a point using 3 floats 
+glEnd() 
+glPopMatrix()-----> put back in correct x y z rot as before 
+
+under hide draw command test function, just above the gl swap buffers add a test display function 
+to test displaying something
